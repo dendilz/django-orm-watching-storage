@@ -9,6 +9,10 @@ Python3 должен быть уже установлен.
 
 В linux:
 ```
+pip3 install -r requirements.txt
+```
+или
+```
 pip install -r requirements.txt
 ```
 В Windows:
@@ -18,13 +22,17 @@ python -m pip install -r requirements.txt
 ### Как запустить
 В Linux:
 ```
-python3 main.py
+python3 manage.py runserver 0.0.0.0:8000
+```
+или
+```
+python manage.py runserver 0.0.0.0:8000
 ```
 В Windows:
 ```
 python main.py
 ```
-В консоли дожны увидеть
+В консоли дожны вы увидеть
 ```
 Performing system checks...
 
@@ -34,4 +42,4 @@ Django version 1.11.29, using settings 'project.settings'
 Starting development server at http://0.0.0.0:8000/
 Quit the server with CONTROL-C.
 ```
-Далее открываем браузер и переходим на страницу http://localhost:8000/
+Если всё хорошо, то открываем браузер и переходим на страницу http://localhost:8000/
